@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	 <meta charset = "UTF-8" >
+		<title> Deya </title>
+	</head>
+	<body>
+		<h1> ЗАДАНИЕ 1 </h1>
+		<ol>
+			<li> Абсолютная гиперссылку на главную страницу сайта example.com <a href = "http://example.com"> example.com </a> </li>
+			<li>  Абсолютная гиперссылка на главную сайта example.com в протоколе https <a href = "https://example.com"> example.com </a> </li>
+			<li>  Ссылка на файл на сервере FTP без авторизации <a href = "ftp://example.com/myfile.zip"> Файл </a> </li>
+			<li> Ссылка на файл на сервере FTP с авторизацией: <a href = "ftp://user:password@example.com/myfile.zip"> Файл с авторизацией </a> </li>
+			<li> Ссылка на фрагмент страницы некоторого сайта: <a href = "https://en.wikipedia.org/wiki/Vladimir_Putin">
+			О главе государства </a> </li>
+			<li> Ссылка на фрагмент текущей страницы: С<a href = "#stoun"> ссылка на изображение</a> </li>
+			<li> Ссылка с двумя параметрами в URL: <a href ="https://yandex.ru/search/?text=океан&lr=35"> Поиск: Океан </a> </li>
+			<li> Список ссылок основной навигации сайта с подписями title: 
+  <a href = "#Form"> Форма </a> </li>
+			<li> Ссылка без href: <a> без href </a> </li>
+			<li> Ссылка с пустым href: <a href="" > с пустым href </a> </li>
+			<li> Ссылка, по которой запрещен переход поисковикам: <a href = "https://vk.com/" rel = "nofollow"> ВКонтакте
+			</a> </li>
+			<li> Ссылка, запрещенная для индексации поисковиками:<noindex--> <a href = "http://www.kubsu.ru"> Университет </a>
+			</noindex--></li>
+			<li> Ссылка контекстная в тексте абзаца:
+			 Добро пожаловат на сайт нашего <a href="http://www.kubsu.ru">университета</a> 
+                         <li>Ссылка-изображение:
+    <br /> <a id = "stoun" href = "https://ru.wikipedia.org/wiki/Стоунхендж"> <img alt = "Стоунхендж" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/1280px-Stonehenge2007_07_30.jpg"
+			height = "414" width = "548"> </a></li>
+    <li> Ссылки из прямоугольных и круглых областей картинки:
+			<br />
+			<map name = "Диаграмма">
+			<area alt = "Красный" shape = "poly" coords = "542,68,643,79,542,504" href = "https://ru.wikipedia.org/wiki/Красный_цвет" title = "Это красный цвет">
+			<area alt = "Синий" shape = "poly" coords =  "542,68,542,505,922,722,945,336" href ="https://ru.wikipedia.org/wiki/Синий_цвет" title = "Это синий цвет">
+			<area alt = "Зелёный" shape = "poly" coords = "541,68,541,506,922,723,637,932,296,868,113,593,202,230" href ="https://ru.wikipedia.org/wiki/Зелёный_цвет" title = "Это зелёный цвет">
+			</map>
+			<img alt="Картинка" src = "https://i.stack.imgur.com/tN1xK.png" usemap = "#Диаграмма">
+			</li>
+			<li> <a href = "./example.html" > Относительная ссылка на страницу в текущем каталоге</a> </li>
+			<li> <a href = "./about/example.html" > Относительная ссылка на страницу в каталоге about </a> </li>
+			<li> <a href = "../example.html" > Относительная ссылка на страницу в каталоге уровнем выше текущего </a> </li>
+			<li> <a href = "../../example.com" > Относительная ссылка на страницу в каталоге двумя уровнями выше </a> </li>
+			<li> <a href = "/" > Сокращенная ссылка на главную страницу </a> </li>
+			<li> <a href = "/example.html" > Сокращенная ссылка на внутреннюю страницу </a> </li>
+		</ol>
+		<h2><a id = "Form"></a>Форма</h2>
+			<form action = "/" method = "POST">
+      <label>
+        Имя:<br />
+        <input name="field-name-1"
+          value="Ваше имя" />
+      </label><br />
+
+      <label>
+         E-mail:<br />
+        <input name="field-email"
+          value="Ваша почта"
+          type="email" />
+      </label><br />
+
+      <label>
+        Ваша дата рождения:<br />
+        <input name="field-date"
+          value="2019-08-13"
+          type="date" />
+      </label><br />
+ Пол:<br />
+      <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1" />Мужской</label>
+      <label><input type="radio" name="radio-group-1" value="Значение2" />Женский</label>
+<br />
+      <label><input type="radio" name="radio-group-1" value="Значение2" />Другой</label>
+<br />
+     
+Количество конечностей:<br /> 
+ 
+<label><input type="radio" checked="checked" name="radio-group-1" value="Значение1" />Стандартное</label>
+<label><input type="radio" name="radio-group-1" value="Значение2" />Больше обычного</label>
+<br /> 
+<label><input type="radio" name="radio-group-1" value="Значение2" />Меньше обычного</label>
+<br />
+<label>
+        Сверхспособности:<br />
+        <select name="field-name-3">
+          <option value="Значение1">Бессмертие</option>
+          <option value="Значение2" selected="selected">Прохождение через стены</option>
+          <option value="Значение3">Левитация</option>
+        </select>
+      </label><br />
+<label> <br />
+        Биография:<br />
+        <textarea name="field-name-2">Укажите что-то о себе</textarea>
+      </label><br />
+      С контрактом ознакомлен(а):<br />
+      <label> <input type="checkbox" checked="checked" name="check-1" />Да</label><br />
+      <input type="submit" value="Отправить" />
+			</form>
+	</body>
+</html>
